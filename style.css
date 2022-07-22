@@ -1,0 +1,37 @@
+/* 上方文字方塊 */
+#dash-profile > .profile-icons:hover::after {
+  font-size:1rem;
+  display: block;
+  height: 2rem;
+  position: absolute;
+  z-index:10;
+  text-align: center;
+  line-height: 2rem;
+  /* 文字內容 */
+  content: "歡迎加入";
+  /* 文字顏色 */
+  color:#000;
+  /* 寬度，文字數量+2 */
+  width:6rem;
+  /* 背景顏色 */
+  background: #0004;
+  /* 位置 */
+  top: -30px;
+  left: -30px;
+  /* 圓角弧度 */
+  border-radius: 7px;
+}
+
+/* 下方三角形 */
+#dash-profile > .profile-icons:hover::before {
+  content: "";
+  display: block;
+  border: solid 10px #0000;
+  position: absolute;
+  z-index: 10;
+  /* 顏色 */
+  border-top-color: #0004;
+  /* 位置 */
+  top: -10px;
+  left: 0px;
+}
