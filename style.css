@@ -1,5 +1,16 @@
-/* 上方文字方塊 */
-#dash-profile > .profile-icons:hover::after {
+/* 噗幣旁邊圖片滑鼠碰到就出現對話框 */
+
+/* 定位噗幣旁邊圖片 */
+#plurk-dashboard .dash-segment-profile #dash-profile .profile-info {
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  left: 90%;
+  transform: translateX(-90%);
+}
+
+/* 文字框 */
+#dash-profile .profile-info:hover::after {
   font-size:1rem;
   display: block;
   height: 2rem;
@@ -23,7 +34,7 @@
 }
 
 /* 下方三角形 */
-#dash-profile > .profile-icons:hover::before {
+#dash-profile .profile-info:hover::before {
   content: "";
   display: block;
   border: solid 10px #0000;
